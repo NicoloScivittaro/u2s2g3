@@ -1,0 +1,16 @@
+// _spacings.scss
+@for $i from 0 through 5 {
+    .padding-block-#{$i} {
+      padding-block: $i * 10px;
+    }
+    .padding-inline-#{$i} {
+      padding-inline: $i * 10px;
+    }
+    .margin-block-#{$i} {
+      margin-block: $i * 10px;
+    }
+    .margin-inline-#{$i} {
+      margin-inline: $i * 10px;
+    }
+  }
+  

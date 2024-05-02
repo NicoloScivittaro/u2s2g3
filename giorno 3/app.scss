@@ -1,0 +1,50 @@
+
+// style.scss
+@import 'reset';
+@import 'colors';
+@import 'font';
+@import 'spacings';
+@import 'buttons';
+@import 'mixins';
+@import 'animations';
+
+.hero-section {
+  background-color: $bg-hero;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  animation: hero-animation();
+}
+
+.hero-text {
+  font-family: $font-family;
+  font-size: $font-size-big;
+  color: $color-text;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-image {
+  @include floating(10px, 0 4px 8px rgba(0, 0, 0, 0.1), 1px solid #ccc);
+}
+
+.grid-container {
+  @include grid(4);
+}
+
+.grid-item {
+  @include floating(5px, 0 2px 4px rgba(0, 0, 0, 0.05));
+}
+.hero-image{
+img{
+    width: 300px;
+}
+}
+.grid-container{
+    img{
+        width: 300px;
+    }
+}

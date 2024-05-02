@@ -1,0 +1,22 @@
+// _buttons.scss
+$button-colors: (
+  primary: $color-button-primary,
+  secondary: $color-button-secondary,
+  tertiary: $color-button-tertiary
+);
+
+@each $name, $color in $button-colors {
+  .button-#{$name} {
+    background-color: $color;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken($color, 10%);
+    }
+  }
+}

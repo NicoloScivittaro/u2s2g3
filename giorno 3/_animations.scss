@@ -1,0 +1,15 @@
+
+// _animations.scss
+@mixin hero-animation($duration: 1s, $start: 0, $end: 100%, $delay: 0, $name: uniqueAnimation) {
+    animation: $name $duration ease $delay forwards;
+    @keyframes #{$name} {
+      from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.8); // Scalatura dell'immagine
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1); // Riporta all'originale
+      }
+    }
+  }
